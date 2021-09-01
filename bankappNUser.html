@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Federal Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/da1cf35165.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bankapp.css">
+    <script src="./bankappscript.js"></script>
+</head>
+
+<body class="">
+    <header>
+        <div class="container-fluid heads1 sticky-top">
+            <div class="container">
+                <div class="row headstyle">
+                    <div class="col-4 " style="height: 70px">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="mb-0"><img src="./logo.jpg" alt="Logo" class="logoimg ms-4 mb-0"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-8 text-white text-end mt-0 me-0 pe-5">
+                        <h5 class="mb-0">PB No: 6105, Kakkanad</h5>
+                        <h5 class="mb-0">Ernakulam - 682026</h5>
+                        <h5 class="mb-0">+91 471 2547814</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="text-white ">
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="name" class="required">Full Name :</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="fname" id="fname" class="form-control" required>
+                </div>
+            </div>
+            <!-- <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="dob" class="required">DOB (DD-MM-YYYY):</label>
+                </div>
+                <div class="col-6">
+                    <input type="date" name="dob" id="dob" class="form-control" required>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="name">Guardian Name (for minor):</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="gname" id="gname" class="form-control" required> 
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="exampleFormControlTextarea1" class="required">Address :</label>
+                </div>
+                <div class="col-6">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" required></textarea>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="pin" class="required">PIN Code :</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="pin" id="pin" class="form-control" required>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="email" class="required">Email :</label>
+                </div>
+                <div class="col-6">
+                    <input type="email" name="emailid" id="emailid" class="form-control" required>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="phone" class="required">Mobile Number :</label>
+                </div>
+                <div class="col-6">
+                    <input type="tel" name="mob" id="mob" class="form-control" required>
+                </div>
+            </div> -->
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="ac_type" class="required">Account Type :</label>
+                </div>
+                <div class="col-6">
+                    <select name="ac_type" id="ac_type" class="form-control" required>
+                        <option value="default">Select Account Type</option>
+                        <option value="savings">Savings Account</option>
+                        <option value="current">Current Account</option>
+                        <option value="joint">Joint Account</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="phone" class="required">Account Number :</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="ac_no" id="ac_no" class="form-control" required>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="phone" class="required">Initial Deposit :</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" name="bal" id="bal" class="form-control" required>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="uname" class="required">Username :</label>
+                </div>
+                <div class="col-6">
+                    <input type="uname" name="uname" id="uname" class="form-control" required>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="pwd" class="required">Password :</label>
+                </div>
+                <div class="col-6">
+                    <input type="password" name="pwd1" id="pwd1" class="form-control" required>
+                </div>
+            </div>
+            <!-- <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-2">
+                    <label for="pwd" class="required">Confirm Password :</label>
+                </div>
+                <div class="col-6">
+                    <input type="password" name="pwd2" id="pwd2" class="form-control" required>
+                </div>
+            </div> -->
+            <div class="row my-3">
+                <div class="col-2"> </div>
+                <div class="col-6 text-center">
+                    <button type="submit" class="btn btn-primary" onclick="bank.createAccount()">Create Account</button>
+                    <button type="reset" class="btn btn-danger"><a href="#">Reset</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-white bg-dark mt-5">
+        <hr class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+
+                </div>
+                <div class="col-4 mt-4">
+                    <h4>Contact Us</h4>
+                    <p class="mb-0">PB No: 1605, Kakkanad</p>
+                    <p class="mb-0">Ernakulam - 682026</p>
+                    <p class="mb-0">contact@federalbank.com</p>
+                    <p class="mb-0">+91 471 2547814</p>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col-3 mt-4">
+                    <h4 class="mb-4">Follow Us</h4>
+                    <a href="#"><i class="fab me-3 fa-2x fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab me-3 fa-2x fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab me-3 fa-2x fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <h6>Site Maintained by FedTech Solutions</h6>
+            <br>
+        </div>
+    </footer>
+</body>
+
+</html>
