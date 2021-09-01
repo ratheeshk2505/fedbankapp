@@ -25,11 +25,15 @@ class Bank {
 
     authenticate() {
         let acc_no = ac_no.value;
-        let username = uname.value;
+        // let username = uname.value;
         let password = pwd1.value;
         if (acc_no in localStorage) {
             let user = JSON.parse(localStorage.getItem(acc_no))
-            if (user.username == username && user.password == password) {
+            // with username
+            // if (user.username == username && user.password == password) {
+
+            // without username
+            if (user.password == password) {
                 // console.log(`Login Success`);
                 alert("Login Success. Welcome to FedBank")
                 sessionStorage.setItem(acc_no, JSON.stringify(user))
@@ -51,12 +55,12 @@ class Bank {
     }
     balEnq() {
         let user = JSON.parse(sessionStorage.getItem(sessionStorage.key(0)))
-        // alert(`Available Balance is ${user.balance}`);
-        let html_data=`<div class="row bg-dark text-white">
-        <div class="col-8"><h6>Your Account Balance is: </h6></div>
-        <div class="col-4"><h6>${user.balance}</h6></div>
-        </div>`;
-        displaydiv.innerHTML=html_data;
+        alert(`Available Balance is ${user.balance}`);
+        // let html_data=`<div class="row bg-dark text-white">
+        // <div class="col-8"><h6>Your Account Balance is: </h6></div>
+        // <div class="col-4"><h6>${user.balance}</h6></div>
+        // </div>`;
+        // displaydiv.innerHTML=html_data;
     }
     fundTransfer() {
         let to_acc = toacc.value;
