@@ -14,19 +14,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid heads1 sticky-top">
+    <header class="sticky-top">
+        <!-- <div class="container-fluid heads1">
             <div class="container">
                 <div class="row headstyle">
-                    <div class="col-4" style="height: 70px;">
-                        <ul>
+                    <div class="col-12 col-sm-9 col-md-5 col-lg-4 col-xl-4" style="height: 60px">
+                        <ul class="p-0">
                             <li>
-                                <a href="#" class="mb-0"><img src="./logo.jpg" alt="Logo" class="logoimg ms-4 mb-0"></a>
+                                <a href="index.html" class="mb-0"><img src="./logo.jpg" alt="Logo" class="logoimg mx-auto mb-0"></a>
                             </li>
                         </ul>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><i class="fas text-white fa-bars"></i>
+                    </button>
                     </div>
-                    <div class="col-8">
-                        <div class="text-end me-5">
+                    <div class="col-12 col-sm-2 col-md-7 col-lg-8 col-xl-8 collapse" id="navbarSupportedContent">
+                        <div class="text-end me-0">
                             <a class="per_name btn" href="" id="user"></a>
                             <a onclick="bank.logOut()" class="btn">Logout <i class="fas fa-sign-out-alt"></i></a>
                         </div>
@@ -41,28 +45,63 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark heads1 p-0">
+            <div class=" container" style="height: 60px">
+                <a class="navbar-brand ms-3 fs-3 py-0" href="#"><img src="./logo.jpg" alt="Logo" class="logoimg mx-auto my-0"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"><i class="fas  fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse heads1 px-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto my-0 mb-lg-0">
+                        <li class="nav-item">
+                        </li>
+                    </ul>
+                    
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item headstyle">
+                            <a class="nav-link text-white fs-5" aria-current="page" href="#">Statements</a>
+                        </li>
+                        <li class="nav-item headstyle">
+                            <a class="nav-link text-white fs-5" aria-current="page" href="#">Transactions</a>
+                        </li>
+                        <li class="nav-item headstyle">
+                            <a class="nav-link text-white fs-5" aria-current="page" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item headstyle">
+                            <a class="nav-link text-white fs-5" aria-current="page" href="#">e-Services</a>
+                        </li>
+                    </ul>
+                    <div class="text-end mx-2">
+                        <a class="per_name btn" href="" id="user"></a>
+                        <a onclick="bank.logOut()" class="btn text-white">Logout <i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
-        <div class="row">
-            <div class="col-3 mt-3 user-width">
+        <div class="row mt-5">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 mt-5">
                 <div class="bg-dark">
                     <ul class="mt-3 ps-0">
                         <label for="heading" class="head2">Accounts & Transactions</label>
-                        <li class="border border-light ps-4"><a href="#">Account Summary</a></li>
-                        <li class="border border-light ps-4"><a href="#">Account Statement</a></li>
-                        <li class="border border-light ps-4"><a href="#">Fund Transfer</a></li>
-                        <li class="border border-light ps-4"><a href="#">Manage Profile</a></li>
-                        <li class="border border-light ps-4"><a href="#">e-Services</a></li>
-                        <li class="border border-light ps-4"><a href="#">Help & Support</a></li>
+                        <li class="border border-secondary ps-4"><a href="#">Account Summary</a></li>
+                        <li class="border border-secondary ps-4"><a href="#">Account Statement</a></li>
+                        <li class="border border-secondary ps-4"><a href="#">Fund Transfer</a></li>
+                        <li class="border border-secondary ps-4"><a href="#">Manage Profile</a></li>
+                        <li class="border border-secondary ps-4"><a href="#">e-Services</a></li>
+                        <li class="border border-secondary ps-4"><a href="#">Help & Support</a></li>
                     </ul>
                 </div>
                 <div class="bg-dark">
                     <ul class="mt-3 ps-0">
                         <label for="heading" class="head2">Other Links</label>
-                        <li class="border border-light ps-4"><a href="" onclick="bank.balEnq()">Balance</a></li>
-                        <li class="border border-light ps-4"><a data-bs-toggle="modal" href="#exampleModal">Fund Transfer</a></li>
+                        <li class="border border-secondary ps-4"><a href="" onclick="bank.balEnq()">Balance</a></li>
+                        <li class="border border-secondary ps-4"><a data-bs-toggle="modal" href="#exampleModal">Fund Transfer</a></li>
                         <!-- <li class="border border-light ps-4"><a href="#">Balance</a></li> -->
                     </ul>
                     <!-- Modal -->
@@ -86,7 +125,7 @@
                       </div>
                 </div>
             </div>
-            <div class="col-8 mt-5 mx-0" >
+            <div class="col-12 col-sm-7 col-md-7 col-lg-9 col-xl-9 mt-5 px-2" >
                 <!-- user page main body here -->
                 
                     <div id="displaydiv">
@@ -103,20 +142,14 @@
         <hr class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-1">
-
-                </div>
-                <div class="col-4 mt-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4 px-4">
                     <h4>Contact Us</h4>
                     <p class="mb-0">PB No: 1605, Kakkanad</p>
                     <p class="mb-0">Ernakulam - 682026</p>
                     <p class="mb-0">contact@federalbank.com</p>
                     <p class="mb-0">+91 471 2547814</p>
                 </div>
-                <div class="col-4">
-
-                </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4 px-4">
                     <h4 class="mb-4">Follow Us</h4>
                     <a href="#"><i class="fab me-3 fa-2x fa-facebook-square"></i></a>
                     <a href="#"><i class="fab me-3 fa-2x fa-twitter-square"></i></a>
@@ -124,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <div class="container text-center">
+        <div class="container text-center my-3">
             <h6>Site Maintained by FedTech Solutions</h6>
             <br>
         </div>

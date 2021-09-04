@@ -7,19 +7,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* height: 2000px; */
+    
 }
 .logoimg {
-    width: 85%;
-    height: 70px;
-    display: block;
+    /* width: 100%; */
+    height: 60px;
+    display: inline-block;
 }
-.login-width{
-    margin-left: 10px;
-    margin-right: -10px;
-}
-.user-width{
-    margin-left: 60px;
-}
+
 .headstyle a, ul{
     text-decoration: none;
     list-style-type: none;
@@ -45,7 +40,7 @@ a{
     color: white;
 }
 .headstyle a:hover{
-    color: #faa519;
+    color: #faa519!important;
     
 }
 a:hover{
